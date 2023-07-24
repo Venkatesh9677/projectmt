@@ -1,0 +1,35 @@
+
+MASTER TABLE
+
+Create table Muscel_Trainer(MS_ID int primary key Auto_increment not null,
+customer_name varchar(255) not null,
+Customer_number int not null,
+Age int not null,
+Address varchar(255) not null,	
+date_of_birth date,
+Gender varchar(255) not null,
+Height numeric(18,2) not null,
+Weight numeric(18,2) not null,	
+ID_proof_Pan_Aadhar varchar(255) not null,
+Email varchar(255) not null,	
+Membership_period varchar(255) not null,
+Payment_mode varchar(255) not null,
+Date_of_joining date));
+
+
+
+
+Create table Muscel_Trainer(MS_ID int primary key Auto_increment not null,
+customer_name varchar(255) not null,
+Customer_number int not null,
+Age int not null,
+Address varchar(255) not null,	
+date_of_birth date,
+Gender varchar(255) not null,
+Height numeric(18,2) not null,
+Weight numeric(18,2) not null,	
+ID_proof_Pan_Aadhar varchar(255) not null,
+Email varchar(255) not null,	
+Membership_period varchar(255) not null,
+Payment_mode varchar(255) not null,
+Date_of_joining date));
