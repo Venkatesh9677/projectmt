@@ -1,21 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 
 const Loginpage = () =>{
-    return(<div className="cover" >
+   
+   const[username,setusername] = useState("");
+   const[password,setpassword] = useState("");
+   
+   const checklogin = () =>{
+    if (username=="admin"&& password=="1111"){alert("loginsuccessful")}
+    else{alert("invaliduser") }
 
+   }
+   
 
+   return(
+        <section class="container cover">
+    <div className="cover" >
+
+    <form action="">
+        <div class="form-group">
 
             <h1>Login</h1>
-            <label>Username</label>
-<input type="text" placeholder="username" />
-            <label>Password</label>
-<input type="Password" placeholder="password" />
+  
+  <label>Username</label>
+  <input type="text" placeholder="username" onChange={(e) => setusername(+e.target.value)} />
+ <label>Password</label>
+ <input type="Password" placeholder="password" onChange={(e) => setpassword(+e.target.value)}/>
+
+
+<button onClick={checklogin}>Login</button>
+
+
 
 </div>
+</form>
+</div>
+
+</section>
+
 
     )
 }
+
+
+
 
 export default Loginpage;
