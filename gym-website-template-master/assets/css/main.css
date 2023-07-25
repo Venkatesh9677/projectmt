@@ -3,19 +3,13 @@
 :root {
   --header-height: 4rem;
 
-  --first-color: gold;
-  --first-color-light: gold;
-  --text-color: #111  ;
-  --text-color-light: ;
+  --first-color: #2eb9f2;
+  --first-color-light: #b9e0ff;
+  --text-color: #111;
+  --text-color-light: #836b6b;
 
   --body-font: 'Nunito Sans', sans-serif;
 }
-
-.mtlogo{height: 70px;
-  width: 34%;
-  margin-bottom: 5px;
-}
-
 
 * {
   box-sizing: border-box;
@@ -106,29 +100,15 @@ img {
 }
 
 .nav-logo span {
-  color: gold;
+  color: #2eb9f2;
 }
-
-
-.nav-logo1   {
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #111;
-}
-
-
-.nav-logo1 span {
-  color:black;
-}
-
-
 
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: gold;
+    background-color: #b9e0ff;
     padding: 2rem;
     height: 100%;
     width: 60%;
@@ -154,7 +134,7 @@ img {
 }
 
 .nav-link:hover {
-  color: gold;
+  color: #2eb9f2;
 }
 
 .nav-close {
@@ -168,7 +148,7 @@ img {
 }
 
 .nav-close:hover {
-  color: gold;
+  color: #2eb9f2;
 }
 
 .nav-toggle {
@@ -178,10 +158,10 @@ img {
 }
 
 .nav-button {
-  background-color: gold;
+  background-color: #2eb9f2;
   padding: 0.8rem 1.2rem;
   border-radius: 2rem;
-  color: black;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -192,7 +172,7 @@ img {
 
 /* hero style */
 .hero {
-  /* background-image: url('../images/bg-hero.jpg'); */
+  background-image: url('../images/bg-hero.jpg');
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -213,10 +193,10 @@ img {
 }
 
 .hero-btn-get-started {
-  background-color: gold;
+  background-color: #2eb9f2;
   padding: 0.8rem 1.2rem;
   border-radius: 2rem;
-  color: black;
+  color: #fff;
   font-weight: 700;
 }
 /* end */
@@ -237,7 +217,7 @@ img {
 
 .about-image {
   width: 100%;
-  height: 90vh;
+  height: auto;
   border-radius: 1rem;
 }
 
@@ -246,31 +226,17 @@ img {
   font-weight: 700;
   color: var(--text-color);
   margin-bottom: 1rem;
-text-align: center;
 }
-
-
-.about-title1 {
-  font-size: 1em;
-  font-weight: 700;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-
-
 
 .about-description {
   margin-bottom: 2rem;
-  color: rgb(16, 16, 16);
+  color: var(--text-color-light);
   font-size: 1.1rem;
   font-weight: 300;
-  text-align: justify;
 }
 
 .about-btn {
-  background-color: gold;
+  background-color: #2eb9f2;
   padding: 0.8rem 1.2rem;
   border-radius: 2rem;
   color: #fff;
@@ -379,13 +345,11 @@ text-align: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
-color: black;
 }
 
 .newsletter-subtitle {
   font-weight: 300;
   margin-bottom: 1.7rem;
-color: black;
 }
 
 .form-group {
@@ -411,7 +375,7 @@ color: black;
   border: none;
   height: 35px;
   padding: 0 1rem;
-  color: black  ;
+  color: #fff;
   font-weight: 400;
   font-size: 1rem;
   margin-right: 0.4rem;
@@ -489,9 +453,7 @@ color: black;
 
 .arrow-up {
   font-size: 1.5rem;
-  color: #000000;
-  border: #000000;
-  border-width: 2px;
+  color: #fff;
 }
 
 .show-scroll {
@@ -583,18 +545,3 @@ color: black;
 
   /* end */
 }
-
-
-/* Loginpage */
-
-.cover{background-color:gold;
- text-align: center;
-  width: 20em;
-  height: 20em;
-  border-radius: 1em;
-  box-shadow: 0,0.188em 1.550em rgb(100, 156, 156);
-  
-
-}
-
-

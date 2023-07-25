@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 
-
 const Loginpage = () =>{
    
    const[username,setusername] = useState("");
@@ -9,17 +8,15 @@ const Loginpage = () =>{
    
    const checklogin = () =>{
     if (username=="admin"&& password=="1111"){alert("loginsuccessful")}
-    else{alert("invaliduser") }
-
-   }
+    else{alert("invaliduser") }}
    
 
    return(
-        <section class="container cover">
+    <section class="container cover">
     <div className="cover" >
 
     <form action="">
-        <div class="form-group">
+    <div class="form-group">
 
             <h1>Login</h1>
   
@@ -28,22 +25,13 @@ const Loginpage = () =>{
  <label>Password</label>
  <input type="Password" placeholder="password" onChange={(e) => setpassword(+e.target.value)}/>
 
-
 <button onClick={checklogin}>Login</button>
-
-
 
 </div>
 </form>
 </div>
-
 </section>
-
-
-    )
+)
 }
-
-
-
 
 export default Loginpage;
