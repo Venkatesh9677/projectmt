@@ -147,7 +147,7 @@ img {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #111;
   transition: 0.3s;
@@ -589,12 +589,17 @@ color: black;
 
 .cover{background-color:gold;
  text-align: center;
-  width: 20em;
+  width: 16em;
   height: 20em;
-  border-radius: 1em;
-  box-shadow: 0,0.188em 1.550em rgb(100, 156, 156);
+  border-radius: .5em;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: row;
   
-
 }
+
+
+
+
 
 

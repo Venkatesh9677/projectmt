@@ -7,11 +7,9 @@ const Newsletter = () =>{
       <p class="newsletter-subtitle">Get the latest information</p>
       <form action="">
         <div class="form-group">
-          <input
-            type="email"
-            class="form-input"
-            placeholder="Enter your email address"
-          />
+         
+         
+          <input type="email" class="form-input"placeholder="Enter your email address"/>
           <button class="newsletter-button">Subscribe</button>
         </div>
       </form>

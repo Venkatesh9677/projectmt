@@ -19,7 +19,9 @@ const Teader = () => {
          <li className="nav-item"><a href="#about" className="nav-link"onClick={()=> setShow(!show)}>About</a></li>
          <li className="nav-item"><a href="#program" className="nav-link"onClick={()=> setShow(!show)}>Program</a></li>
          <li className="nav-item"><a href="#pricing" className="nav-link"onClick={()=> setShow(!show)}>Plans</a></li>
-        
+        <li className="nav-item"><a href="#loginpage" className="nav-link"onClick={()=> setShow(!show)}>Login</a></li>
+    
+    
     <div className="nav-close" id="nav-close" onClick={()=> setShow(!show)}><i className="ri-close-line nav-close"></i>
           </div>
         
