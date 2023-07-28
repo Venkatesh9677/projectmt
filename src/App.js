@@ -1,5 +1,5 @@
 import React from "react";
-import Teader from "./components/Teader";
+import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Program from "./components/Program";
@@ -9,40 +9,20 @@ import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
 import Loginpage from "./components/Loginpage";
 
-
 function App() {
   return (
-  <> 
- <Teader />
- 
- <main>
- 
- <Hero />
- <About />
- <Program />
- <Membership />
- <Newsletter />
- </main> 
-
-
-<div>
-<Loginpage/>
-
-
-</div>
-  
-
-
-
-<Footer /> 
- 
-<ScrollUp /> 
- 
-  </>
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <Program />
+      <Membership />
+      <Newsletter />
+      <Loginpage />
+      <Footer />
+      <ScrollUp />
+    </>
   );
 }
-
-
-
 
 export default App;
