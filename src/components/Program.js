@@ -7,7 +7,9 @@ const Program = () => {
   return (
     <section className="program container" id="program">
       <h3 className="section-title">OUR PROGRAM</h3>
-      <span className="section-subtitle">Build your best body</span>
+      <span className="section-subtitle1">BUILT YOUR BEST BODY</span>
+      <br/> <br/>
+     
       <div className="row program-row">
         <div className="col-md-4 program-card">
           <img className="program-card-image" src={ProgramImage1} alt="" />
@@ -17,6 +19,7 @@ const Program = () => {
           </p>
         </div>
 
+        
         <div className="col-md-4 program-card">
           <img className="program-card-image" src={ProgramImage2} alt="" />
           <h4 className="card-title">Muscle Building</h4>
@@ -25,13 +28,14 @@ const Program = () => {
           </p>
         </div>
 
+        
         <div className="col-md-4 program-card">
           <img className="program-card-image" src={ProgramImage3} alt="" />
           <h4 className="card-title">Stretch & Yoga</h4>
           <p className="card-description">
-            {/* Add description for Stretch & Yoga program */}
-          </p>
+            {/* Add description for Stretch & Yoga program */} </p>
         </div>
+      
       </div>
     </section>
   );

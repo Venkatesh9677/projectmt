@@ -379,6 +379,7 @@ img {
   font-weight: 400;
   font-size: 1rem;
   margin-right: 0.4rem;
+-webkit-text-stroke-width:  red;
 }
 
 /* end */

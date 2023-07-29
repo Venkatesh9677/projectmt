@@ -9,8 +9,7 @@ const Loginpage = () => {
 
   const checklogin = (e) => {
     e.preventDefault();
-    if (username.trim() === "" && password === "") {
-      setErrorMessage("Please fill in both username and password.");
+    if (username.trim() === "" && password === "") {setErrorMessage("Please fill in both username and password.");
     } else if (username.trim() === "") {
       setErrorMessage("Please fill in the username.");
     } /*else if (!username.match(alphanumericRegex)) {
@@ -22,27 +21,21 @@ const Loginpage = () => {
     } else if (password.length > 15) {
       setErrorMessage("Password should not exceed 15 characters.");
     } */else if (username === "admin" && password === "1111") {
-      setErrorMessage("Login successful");
+      setErrorMessage("Login successful.");
       setTimeout(() => {
         setErrorMessage("");
         setusername("");
         setpassword("");
-      }, 5000);
-    } else if (username === "admin") {
-      setErrorMessage("Invalid password.");
-    } else if (password === "1111") {
-      setErrorMessage("Invalid username.");
-    } else {
-      setErrorMessage("Invalid username or password.");
-    }
-  };
+      }, 5000);}
+      
+      else if (username === "admin") {setErrorMessage("Invalid password.");} else if (password === "1111") {setErrorMessage("Invalid username.");} 
+      else {setErrorMessage("Invalid username or password.");}
+ };
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      if (e.target.name === "username") {
-        passwordRef.current.focus(); // Move focus to the password input field
-      } else {
+  const handleKeyDown = (e) => {if (e.key === "Enter") {e.preventDefault();
+  if (e.target.name === "username") {passwordRef.current.focus(); // Move focus to the password input field 
+  } 
+else {
         checklogin(e); // Trigger the login function when "Enter" is pressed in the password input field
       }
     }
@@ -50,39 +43,30 @@ const Loginpage = () => {
 
   return (
     <section className="container" id="login">
-      <div className="cover-card">
-        <h1 className="cover-title">Login</h1>
-        <form action="" className="cover-group">
-          <label className="cover-label">Username</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter username"
-            className="form-control"
-            value={username}
-            onChange={(e) => setusername(e.target.value)}
-            onKeyDown={handleKeyDown}
-          />
-          <label className="cover-label">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter password"
-            className="form-control"
-            value={password}
-            onChange={(e) => setpassword(e.target.value)}
-            onKeyDown={handleKeyDown}
-            ref={passwordRef}
-          />
+  <div className="cover-card">
+  <h1 className="cover-title">Login</h1>
 
-          {errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
+<form action="" className="cover-group">
+ 
+  <label className="cover-label">Username</label>
+ <input type="text" name="username" placeholder="Enter username" 
+ className="form-control"value={username} 
+ onChange={(e) => setusername(e.target.value)} 
+ onKeyDown={handleKeyDown} />
+          
+  <label className="cover-label">Password</label>
+<input type="password" name="password" placeholder="Enter password" 
+className="form-control" value={password} 
+onChange={(e) => setpassword(e.target.value)}
+ onKeyDown={handleKeyDown} ref={passwordRef} />
+{errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
 
-          <button onClick={checklogin} className="btn btn-primary cover-button">
-            Login
-          </button>
-        </form>
-      </div>
-    </section>
+
+<button onClick={checklogin} className="btn btn-primary cover-button">Login</button>
+       
+  </form>
+  </div>
+</section>
   );
 };
 

@@ -1,14 +1,14 @@
 :root {
   --header-height: 5rem;
   --first-color: gold;
-  --first-color-light: rgb(255, 234, 0);
-  --text-color: #171717;
-  --text-color-light: ;
+  --first-color-light:gold;
+  --text-color:black;
+  --text-color-light:wheat;
   --body-font: 'Nunito Sans', sans-serif;
 }
 
 .container {
-  background-color: #f8f8f8;
+  background-color: white;
   padding: 20px;
 }
 
@@ -17,12 +17,9 @@
  
 }
 
- 
-
-
-.mtlogo {
+ .mtlogo {
   height: 50px;
-  width: 30%;
+  width: 25%;
   margin-bottom: 5px;
 }
 
@@ -39,22 +36,19 @@ html {
 .navbar-nav {
   display: flex;
   margin-left: auto;
-  gap: 5px;
+  gap: 15px;
   justify-content: space-evenly;
   align-items: center;
   height: 20px;
+
 }
-
-
-
-
 
 
 /* Hover effect for buttons */
 .nav-button:hover,
 .cover-button:hover {
-  background-color: var(--first-color);
-  color: #191818;
+  background-color:black;
+  color: gold;
 
 }
 
@@ -62,6 +56,7 @@ html {
 .cover-button:active {
   background-color: #191818;
   color: var(--first-color);
+
 }
 
 @media screen and (max-width: 992px) {
@@ -70,8 +65,7 @@ html {
     flex-direction: column;
     justify-content: flex-end;
     align-items: self-end;
-    margin-top:50vh;;
-  }
+    margin-top:60vh;}
 
   .navbar-nav li {
     margin-right: 10px;
@@ -79,7 +73,7 @@ html {
   }
 
   .navbar-nav li:active a {
-    color: gold;
+    color:gold;
   }
 }
 
@@ -112,6 +106,15 @@ html {
 }
 
 
+.about-title1 {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.about-description{text-align: justify;}
+
+
 /* Assuming 'Program' and 'Membership' are sibling components */
 .program {
   margin-bottom: 40px;
@@ -125,7 +128,7 @@ html {
   background-color: #fff;
   border: 1px solid #f4f4f4;
   padding: 2.5rem 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(237, 237, 5, 0.1);
 }
 
 .program-card-image {
@@ -143,12 +146,19 @@ html {
 }
 
 .section-subtitle {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: black;
-  text-align: center;
+  text-align:center;
   margin-bottom: 2rem;
+  margin-left: 30PX;
+
 }
+
+.section-subtitle1{margin-left: 460px;font-weight: 400;}
+
+
+
 
 /* Assuming 'Membership' and 'Newsletter' are sibling components */
 .membership {
@@ -167,10 +177,12 @@ html {
 }
 
 .membership-plan {
-  color: var(--first-color);
+  color:gold;
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 700;
+  color: gold;
+  
 
 }
 
@@ -187,6 +199,7 @@ html {
 .membership-feature {
   text-align: initial;
   margin-bottom: 2.5rem;
+  
 }
 
 .membership-list {
@@ -194,6 +207,7 @@ html {
   align-items: center;
   column-gap: 0.4rem;
   margin-bottom: 0.4rem;
+  
 }
 
 
@@ -206,6 +220,7 @@ html {
   transition: 0.6s;
   font-weight: 600;
   margin-top: auto;
+  text-decoration: none;
 }
 
 .membership-btn:hover {
@@ -370,6 +385,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
+  
 }
 
 .footer-feature .col {
@@ -381,11 +398,15 @@ html {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  
 }
+
 
 .footer-feature-list li {
   margin-bottom: 0.6rem;
+
 }
+
 
 .footer-feature-list li a {
   color: var(--text-color);
@@ -393,6 +414,7 @@ html {
   font-size: 1.1rem;
   display: flex;
   align-items: center;
+text-decoration: none;
 }
 
 .footer-feature-list li a i {
@@ -408,9 +430,12 @@ html {
   color: var(--first-color);
 }
 
+
 .footer-identity span {
-  color: var(--first-color);
+  color: black;
 }
+
+.footer-copyright{text-align: center; opacity:20%;}
 
 
 /* Add this media query to adjust the footer layout on smaller screens */
@@ -448,9 +473,21 @@ html {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+
 }
+
 
 .scroll-up.show-scroll {
   opacity: 1;
   visibility: visible;
 }
+
+
+/* for subscribe & login button */
+.btn{background-color: gold;
+  color: black;border: 1px solid gold;
+  font-weight: 600;
+border-radius: 0px 8px 0px 8px; 
+}
+
+.btn:hover{background-color:black;color: gold;border: 1px solid black; }
