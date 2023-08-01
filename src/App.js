@@ -8,6 +8,9 @@ import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
 import Loginpage from "./components/Loginpage";
+import Signup from "./components/Signup";
+import Registration from "./Registration";
+
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
       <Membership />
       <Newsletter />
       <Loginpage />
+      <Signup />
+      <Registration/>
+     
+     
       <Footer />
       <ScrollUp />
     </>

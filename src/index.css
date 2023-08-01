@@ -5,15 +5,18 @@
   --text-color:black;
   --text-color-light:wheat;
   --body-font: 'Nunito Sans', sans-serif;
+  font-size: 16px;
 }
 
 .container {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
+border-radius: 5px;
+
 }
 
 .Header .navbar-brand {
-  font-size: 35px;
+  font-size: 30px;
  
 }
 
@@ -36,7 +39,7 @@ html {
 .navbar-nav {
   display: flex;
   margin-left: auto;
-  gap: 15px;
+  gap: 40px;
   justify-content: space-evenly;
   align-items: center;
   height: 20px;
@@ -44,12 +47,11 @@ html {
 }
 
 
-/* Hover effect for buttons */
+/* Hover effect for buttons home */
 .nav-button:hover,
 .cover-button:hover {
-  background-color:black;
   color: gold;
-
+  border-radius: 0px 8px 0px 8px;
 }
 
 .nav-button:active,
@@ -59,13 +61,14 @@ html {
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .navbar-nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: self-end;
-    margin-top:60vh;}
+    margin-top:82vh;
+  padding: 1px;}
 
   .navbar-nav li {
     margin-right: 10px;
@@ -97,6 +100,8 @@ html {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid gold;
 }
 
 .about-title {
@@ -155,7 +160,7 @@ html {
 
 }
 
-.section-subtitle1{margin-left: 460px;font-weight: 400;}
+.section-subtitle1{font-weight: 200;font-size: 16px;margin-left: 480px;}
 
 
 
@@ -264,7 +269,7 @@ html {
 }
 
 .newsletter-subtitle {
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1.7rem;
 }
 
@@ -301,28 +306,47 @@ html {
 }
 
 
-/* Assuming 'Loginpage' is the component name */
+/* Assuming 'Loginpage','signup' is the component name(container) */
 .cover-card {
   margin-bottom: 40px;
   background-color: var(--first-color);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .cover-group {
   margin: auto;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color:whitesmoke;
   width: 400px;
-  padding-left: 20px;
+  /* padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px; */
+padding: 25px;}
+
+
+/* reg */
+
+.reg-group {
+ 
+  display: flex;
+  flex-direction: column;
+  background-color:whitesmoke;
+  width: 80%;
+  padding-left: 40px;
+  padding-top: 30px;
+  margin: 40px 0px 0px 110px;
 }
 
+
+
 .cover-title {
-  margin-bottom: 0.8rem;
-  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
   text-align: center;
+  padding: 10px;
 }
 
 .cover-label {
@@ -487,7 +511,43 @@ text-decoration: none;
 .btn{background-color: gold;
   color: black;border: 1px solid gold;
   font-weight: 600;
-border-radius: 0px 8px 0px 8px; 
+  font-size: 18px;
+border-radius: 0px 8px 0px 8px;
+ 
 }
 
-.btn:hover{background-color:black;color: gold;border: 1px solid black; }
+
+.btn1{
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+
+.btn:hover{background-color:black;color: gold;border: 1.2px solid gold; }
+
+.cover-label{font-size: 18px;padding: 1px;}
+
+
+/* Signup page  Registration page*/
+
+.signupcontainer{ background-color: gold; 
+margin: 70px;
+padding: 35px;font-weight: 600;}
+
+
+.sig{text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;}
+
+  
+
+  .btn2{background-color:gold;border: 6px solid white;
+    border-radius: 8px 0px 8px 0px;
+    font-weight: 600 ;
+  margin-bottom: 20px;}
+  
+  .btn2:hover{background-color:black;color: gold ;}
