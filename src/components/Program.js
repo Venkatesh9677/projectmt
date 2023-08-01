@@ -7,8 +7,8 @@ const Program = () => {
   return (
     <section className="program container" id="program">
       <h3 className="section-title">OUR PROGRAM</h3>
-      <span className="section-subtitle1">BUILT YOUR BEST BODY</span>
-      <br/> <br/>
+      <span className="section-subtitle1"> BUILT YOUR BEST BODY <br/></span>
+      
      
       <div className="row program-row">
         <div className="col-md-4 program-card">

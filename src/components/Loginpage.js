@@ -13,7 +13,7 @@ const Loginpage = () => {
     } else if (username.trim() === "") {
       setErrorMessage("Please fill in the username.");
     } /*else if (!username.match(alphanumericRegex)) {
-        setErrorMessage("Username should contain only alphanumeric characters.");
+      setErrorMessage("Username should contain only alphanumeric characters.");
     }*/ else if (password === "") {
       setErrorMessage("Please fill in the password.");
     } /*else if (password.includes(" ")) {
@@ -44,7 +44,7 @@ else {
   return (
     <section className="container" id="login">
   <div className="cover-card">
-  <h1 className="cover-title">Login</h1>
+  <h1 className="cover-title">Admin</h1>
 
 <form action="" className="cover-group">
  
