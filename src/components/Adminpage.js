@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-const Loginpage = () => {
+const Adminpage = () => {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -44,7 +44,7 @@ else {
   return (
     <section className="container" id="login">
   <div className="cover-card">
-  <h1 className="cover-title">Login</h1>
+  <h1 className="cover-title">Admin</h1>
 
 <form action="" className="cover-group">
  
@@ -70,4 +70,4 @@ onChange={(e) => setpassword(e.target.value)}
   );
 };
 
-export default Loginpage;
+export default Adminpage;

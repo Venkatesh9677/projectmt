@@ -4,9 +4,9 @@ const Registration = () => {
    return (
 
 
-<div className="signupcontainer container mt-4">
+<div className="container mt-4">
 <div className="cover-card">
-   <h2 className="sig">Registration Form</h2>
+   <h2 className="cover-title">Registration Form</h2>
    <form action="" className="reg-group">
 
     <div className="row">
@@ -126,9 +126,9 @@ const Registration = () => {
      <label htmlFor="gpa">Weight in kg's</label>
      <input type="number" className="form-control" id="weight" /></div>
      */}
-     <div className="col-md-2 mb-3">
-     <label htmlFor="admissionDate">Date of Joining</label>
-     <input type="date" className="form-control" id="admissionDate" /></div>
+     <div className="col-md-3 mb-3">
+     <label htmlFor="Dateofjoining">Date of Joining</label>
+     <input type="date" className="form-control" id="Dateofjoining" /></div>
         
 
     
@@ -159,7 +159,7 @@ const Registration = () => {
 
    
    <div class="d-grid gap-1 col-2 mx-auto">
-   <button className="btn2 btn-primary">Create Account</button></div>
+   <button className="btn2 btn-primary">Create</button></div>
         
 
 
