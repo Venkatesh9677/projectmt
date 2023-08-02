@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-const Loginpage = () => {
+const Dashboard = () => {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -44,25 +44,29 @@ else {
   return (
     <section className="container" id="login">
   <div className="cover-card">
-  <h1 className="cover-title">Login</h1>
+  <h1 className="cover-title">Weekly Report</h1>
 
 <form action="" className="cover-group">
  
-  <label className="cover-label">Username</label>
- <input type="text" name="username" placeholder="Enter username" 
- className="form-control"value={username} 
- onChange={(e) => setusername(e.target.value)} 
- onKeyDown={handleKeyDown} />
           
-  <label className="cover-label">Password</label>
-<input type="password" name="password" placeholder="Enter password" 
-className="form-control" value={password} 
-onChange={(e) => setpassword(e.target.value)}
- onKeyDown={handleKeyDown} ref={passwordRef} />
+  <label className="cover-label">Date of entry</label>
+<input type="date" name="password" placeholder="Enter password" 
+className="form-control" value={password} onChange={(e) => setpassword(e.target.value)} onKeyDown={handleKeyDown} ref={passwordRef} />
+
+
+<label className="cover-label">Weight in kgs</label>
+ <input type="number" name="username" placeholder="Enter current weight" 
+ className="form-control"value={username}onChange={(e) => setusername(e.target.value)} onKeyDown={handleKeyDown} />
+ 
+ 
+ <label className="cover-label">Type of Plan</label>
+ <input  type="text" name="username" placeholder="Enter current plan" 
+ className="form-control"value={username} onChange={(e) => setusername(e.target.value)} onKeyDown={handleKeyDown} />
+
 {errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
+   
 
-
-<button onClick={checklogin} className="btn btn-primary cover-button">Login</button>
+<button onClick={checklogin} className="btn btn-primary cover-button">Sumbit</button>
        
   </form>
   </div>
@@ -70,4 +74,4 @@ onChange={(e) => setpassword(e.target.value)}
   );
 };
 
-export default Loginpage;
+export default Dashboard;

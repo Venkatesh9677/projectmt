@@ -76,7 +76,7 @@ onKeyDown={handleKeyDown} ref={passwordRef} />
 {errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
 
 
-<button onClick={checklogin} className="btn btn-primary cover-button">Create user</button>
+<button onClick={checklogin} className="btn btn-primary cover-button">Create User</button>
      
 </form>
 </div>

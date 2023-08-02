@@ -9,7 +9,10 @@ import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
 import Loginpage from "./components/Loginpage";
 import Signup from "./components/Signup";
-import Registration from "./Registration";
+import Registration from "./components/Registration";
+import Adminpage from "./components/Adminpage";
+import Dashboard from "./components/Dashboard";
+
 
 
 function App() {
@@ -21,10 +24,11 @@ function App() {
       <Program />
       <Membership />
       <Newsletter />
+      <Adminpage/>
       <Loginpage />
       <Signup />
       <Registration/>
-     
+      <Dashboard/>
      
       <Footer />
       <ScrollUp />
