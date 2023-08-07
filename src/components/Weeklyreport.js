@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 
 
-const Dashboard = () => {
+const Weeklyreport = () => {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -45,14 +45,14 @@ else {
   return (
     <section className="container" id="login">
   <div className="cover-card">
-  <h1 className="cover-title">Dashboard</h1>
+  <h1 className="cover-title">Weekly Report</h1>
 
 <form action="" className="cover-group">
  
           
-  {/* <label className="cover-label">Date of entry</label>
+  <label className="cover-label">Date of entry</label>
 <input type="date" name="password" placeholder="Enter password" 
-className="form-control" value={password} onChange={(e) => setpassword(e.target.value)} onKeyDown={handleKeyDown} ref={passwordRef} /> */}
+className="form-control" value={password} onChange={(e) => setpassword(e.target.value)} onKeyDown={handleKeyDown} ref={passwordRef} />
 
 
 <label className="cover-label">Weight in kgs</label>
@@ -75,4 +75,4 @@ className="form-control" value={password} onChange={(e) => setpassword(e.target.
   );
 };
 
-export default Dashboard;
+export default Weeklyreport;

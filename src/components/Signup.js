@@ -1,10 +1,13 @@
 import React, { useState, useRef } from "react";
+import {useNavigate} from "react-router-dom";
+
 
 const Signup = () => {
   const [username, setusername] = useState("");
 const [password, setpassword] = useState("");
 const [errorMessage, setErrorMessage] = useState("");
 const passwordRef = useRef(null);
+const navigate = useNavigate();
 //const alphanumericRegex = /^[a-zA-Z0-9]+$/;
 
 const checklogin = (e) => {
@@ -42,7 +45,7 @@ else {
 };
 
 return (
-  <section className="container" id="login">
+  <section className="container" id="signup">
 <div className="cover-card">
 <h1 className="cover-title">Signup</h1>
 

@@ -18,10 +18,10 @@ const Header = () => {
   <li className="nav-item"><a href="#about" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>About</a></li>
   <li className="nav-item"><a href="#program" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>Program</a></li>
   <li className="nav-item "><a href="#pricing" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>Plans</a></li> 
-  <li className="nav-item"><a href="#login" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>Login</a></li>
-  <li className="nav-item"><a href="#login" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>Admin</a></li>
+  <li className="nav-item"><a href="/login" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>Login</a></li>
+  <li className="nav-item"><a href="/admin" className="btn1 btn-primary nav-button" onClick={() => setShow(!show)}>Admin</a></li>
  
-  <li><a href="#program" className="btn btn-primary nav-button">Signup</a></li>
+  <li><a href="/signup" className="btn btn-primary nav-button">Signup</a></li>
   </ul>
 
 
